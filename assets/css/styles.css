@@ -139,7 +139,17 @@ img {
 
 
 /*=============== HOME ===============*/
+.home{
+  position: relative;
+}
 
+.home__bg{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 750px;
+}
 
 /*=============== BUTTON ===============*/
 
