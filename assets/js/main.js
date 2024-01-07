@@ -32,7 +32,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*=============== ADD BLUR TO HEADER ===============*/
-
+const blurHeader = () => {
+  const header = ducument.getElementById('header')
+// when the scroll is greater than 50 viewpoint height add the blur-header class
+  this.scrolly >= 50? header.classList.add('blur-header')
+                    : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
