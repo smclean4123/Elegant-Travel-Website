@@ -76,6 +76,7 @@ button,
 input {
   outline: none;
   border: none;
+  
 }
 
 h1, h2, h3, h4 {
@@ -240,6 +241,7 @@ object-position: center;
   position: relative;
   padding-top: 3rem;
   row-gap: 3rem;
+  
   }
 
   .home__data{
@@ -274,6 +276,7 @@ object-position: center;
   .home__card-img{
     transition: transform .4s;
   }
+
 .home__shadow{
   position: absolute;
   width: 100%;
@@ -301,6 +304,8 @@ object-position: center;
 .button{
   background-color: hsla(0, 0%, 100%, .2);
   padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   color: var(--title-color);
   display: inline-flex;
   align-items: center;
@@ -320,15 +325,47 @@ object-position: center;
 transform: translateX(.25rem)
 }
 
-/*==========curser Glow=====================*/
-
-	
-
 
 
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 3rem;
+}
 
+.about__data{
+  text-align: center;
+}
 
+.about__description{
+  margin-bottom: 2rem;
+}
+
+.about__image{
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.about__img{
+  width: 300px;
+  transition: transform .4s;
+}
+
+.about__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0,0%,0%,0) 50%),
+              hsl(0, 0%, 0%) 125%;
+
+}
+
+.about__image:hover .about__img{
+  transform: scale(1.2);
+}
 /*=============== POPULAR ===============*/
 
 
