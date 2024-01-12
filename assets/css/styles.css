@@ -66,10 +66,12 @@ input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
+  overflow: auto;
 }
 
 body {
   background-color: var(--body-color);
+  overflow: auto;
 }
 
 button,
@@ -453,7 +455,11 @@ transform: translateX(.25rem);
               hsl(0, 0%, 0%,) 5%,
               hsla(0, 0%, 0%, 0) 40%,
               hsla(0, 0%, 0%, 0) 60%,
-              hsl(0, 0%, 0%) 5);
+              hsl(0, 0%, 0%) 92%);
+}
+
+.explore__content{
+  position: relative;
 }
 
 /*=============== JOIN ===============*/
